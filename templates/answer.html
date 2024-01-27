@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href= {{url_for('static',filename =
+    'css/Aboutus.css')}} />
+    <title>Ask Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ask Us</h1>
+    </header>
+    <main>
+      <form action="/ask" method="POST">
+      <section id="inputSection">
+        <label for="textInput">Enter Text:</label>
+        <textarea
+          input type="text" name = "que"
+          id="textInput"
+          rows="4"
+          cols="50"
+          placeholder="Type or paste your text here..."
+        >{{que}}</textarea>
+        <button><input type="submit" value = "Submit" /></button>
+      </form>
+      </section>
+      <section id="outputSection">
+        <h2>Answer:</h2>
+        <p>{{data}}</p>
+        <ul id="errorList"></ul>
+      </section>
+    </main>
+    <script type = "text/javascript" src={{url_for('static',filename =
+      'script/Aboutus.js')}}></script>
+  </body>
+</html>
