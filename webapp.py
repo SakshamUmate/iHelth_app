@@ -1,7 +1,6 @@
 from app import *
 from flask import Flask, render_template, request, redirect
 
-from webmodel import db, Appointment
 from datetime import datetime
 import pymongo 
 client=pymongo.MongoClient("mongodb+srv://saksham:qk70nd97a@cluster1.vucvhcs.mongodb.net/?retryWrites=true&w=majority")
