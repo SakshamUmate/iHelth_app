@@ -45,4 +45,4 @@ def asking():
     return render_template("Aboutus.html")
 
 
-app.run(debug=True)
+app.run(debug=False,host='0.0.0.0')
