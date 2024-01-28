@@ -1,4 +1,4 @@
-from app import *
+from newapp import *
 from flask import Flask, render_template, request, redirect
 
 from datetime import datetime
